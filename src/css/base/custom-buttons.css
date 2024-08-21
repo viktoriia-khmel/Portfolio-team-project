@@ -1,0 +1,77 @@
+.custom-btn-next,
+.custom-btn-prev {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: pointer;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-icon-next,
+.custom-icon-prev {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-text);
+  stroke: var(--main-text);
+}
+
+.custom-btn-next:disabled,
+.custom-btn-prev:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: not-allowed;
+}
+
+.custom-btn-next:disabled:hover,
+.custom-btn-prev:disabled:hover {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: not-allowed;
+}
+
+.custom-btn-next:hover,
+.custom-btn-prev:hover {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+.custom-btn-next:disabled .custom-icon-next,
+.custom-btn-prev:disabled .custom-icon-prev {
+  fill: rgba(250, 250, 250, 0.2);
+  stroke: rgba(250, 250, 250, 0.2);
+}
+
+.custom-container-buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-btn-next,
+  .custom-btn-prev {
+    width: 68px;
+    height: 68px;
+  }
+
+  .custom-icon-next,
+  .custom-icon-prev {
+    width: 32px;
+    height: 32px;
+  }
+}

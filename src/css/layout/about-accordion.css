@@ -1,0 +1,125 @@
+.about-acc-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-acc-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.about-acc-item .about-acc-header {
+  width: 100%;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-acc-button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-acc-button:hover {
+  border-color: rgba(250, 250, 250, 0.6);
+}
+
+.about-acc-icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--main-text);
+  transition: transform 0.3s ease;
+}
+
+.about-acc-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-acc-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-acc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-acc-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.ac {
+  margin-top: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 32px;
+}
+
+.ac .ac-trigger {
+  font-family: 'InterTight', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.ac .ac-trigger::after {
+  content: none;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: none;
+}
+
+.ac.is-active .about-acc-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+  .about-acc-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-acc-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-acc-panel {
+    margin-left: 696px;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,84 @@
+<footer class="footer-section" id="id-order">
+  <div class="container footer-container">
+    <div class="footer-logo-container">
+      <a class="footer-logo" href="./index.html">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/footer/photo-desktop@1x.webp 1x,
+              ./img/footer/photo-desktop@2x.webp 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/footer/photo-mobile@1x.webp 1x,
+              ./img/footer/photo-mobile@2x.webp 2x
+            "
+          />
+          <img
+            class="footer-image"
+            src="./img/footer/photo-mobile@1x.webp"
+            alt="photo of Jefferson"
+          />
+        </picture>
+      </a>
+      <h2 class="footer-title">
+        Let&#39;s <span class="footer-title-accent">work</span>
+      </h2>
+      <h2 class="footer-title">together</h2>
+    </div>
+
+    <form class="footer-form">
+      <div class="footer-email-wrapper js-custom-input-container">
+        <input
+          type="text"
+          name="email"
+          class="footer-input footer-email js-custom-input"
+          placeholder="clients@gmail.com"
+          data-original=""
+          required
+        />
+        <span class="footer-email-error">Invalid email, try again</span>
+        <span class="footer-email-success">Succes!</span>
+      </div>
+
+      <div class="footer-comment-wrapper js-custom-input-container">
+        <input
+          type="text"
+          name="comment"
+          class="footer-input footer-comment js-custom-input"
+          placeholder="comments"
+          data-original=""
+          required
+        />
+        <span class="footer-comment-error">Invalid comment, try again</span>
+      </div>
+
+      <button class="footer-button" type="submit">Send</button>
+    </form>
+
+    <address>
+      <ul class="footer-address">
+        <li>
+          <a
+            href="email:lloydjefferson@gmail.com"
+            class="footer-contact footer-email-contact link"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li>
+          <a
+            href="tel:+3801111111111"
+            class="footer-contact footer-phone-contact link"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+    <button type="button" class="footer-scroll-up js-footer-scroll-up">
+      Scroll up
+    </button>
+  </div>
+</footer>

@@ -1,0 +1,121 @@
+.benefits-section {
+  padding-top: 64px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--transparent-text-color);
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: left;
+}
+
+.benefit-item {
+  background-color: var(--cards);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 344px;
+  max-width: 100%;
+}
+
+.benefit-icon-wrap {
+  margin-bottom: 64px;
+  width: 48px;
+  background: var(--button-text);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.benefit-icon {
+  stroke: #fafafa;
+  fill: none;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0.02em;
+  letter-spacing: 0.02em;
+  color: var(--main-text);
+  margin-bottom: 16px;
+}
+
+.benefit-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--transparent-description-color);
+  word-wrap: break-word;
+}
+
+.order-project {
+  text-align: center;
+  max-width: 187px;
+  padding: 18px 30px;
+  color: var(--main-text);
+  border-radius: 60px;
+  border: 1px solid var(--transparent-elements-color);
+  text-decoration: none;
+  transition: border-color ease-in 250ms;
+  margin-top: 32px;
+}
+
+.order-project:hover {
+  border-color: rgba(250, 250, 250, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section {
+    padding-top: 96px;
+  }
+
+  .benefit-item {
+    width: calc((100% - 16px) / 2);
+  }
+  .order-project {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-section {
+    padding-top: 164px;
+  }
+
+  .container-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefits-list {
+    width: 660px;
+    height: 556px;
+  }
+
+  .benefit-item {
+    width: calc((100% - 16px) / 2);
+  }
+}

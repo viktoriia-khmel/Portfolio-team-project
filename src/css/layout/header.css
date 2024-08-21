@@ -1,0 +1,144 @@
+.header {
+  background-color: transparent;
+  padding-top: 32px;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.header-logo-image {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+}
+
+.header-logo-text {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.header-menu-btn,
+.header-order-link {
+  display: none;
+}
+
+.header-navigation {
+  position: relative;
+}
+
+.header-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateX(-25%);
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 120px;
+  top: 50%;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+}
+
+.header-mobile-menu-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mobile-menu-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header-mobile-menu-btn {
+    display: none;
+  }
+
+  .header-menu-btn {
+    padding: 0 10px;
+    width: 60px;
+    height: 39px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'InterTight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--main-text);
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-btn:hover {
+    color: var(--button-text);
+  }
+
+  .header-order-link {
+    border-radius: 60px;
+    width: 163px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-text);
+    font-family: 'InterTight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-order-link:hover {
+    background-color: var(--button-hover);
+  }
+
+  .header-menu.isopen {
+    display: flex;
+  }
+
+  .header-menu-item-link {
+    font-family: 'InterTight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-item-link:hover {
+    color: var(--button-hover);
+  }
+}

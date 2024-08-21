@@ -1,0 +1,58 @@
+<header class="header header-fixed">
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html">
+      <picture>
+        <source
+          srcset="./img/header/photo@1x.webp 1x, ./img/header/photo@2x.webp 2x"
+          type="image/webp"
+        />
+        <img
+          class="header-logo-image"
+          src="./img/header/photo@1x.webp"
+          alt="Photo of Jefferson"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <span class="header-logo-text">jefferson*</span>
+    </a>
+
+    <nav class="header-navigation js-header-navigation">
+      <button type="button" class="header-menu-btn js-header-menu-btn">
+        Menu
+      </button>
+      <ul class="header-menu js-header-menu">
+        <li>
+          <a href="#id-about" class="header-menu-item-link">About me</a>
+        </li>
+        <li>
+          <a href="#id-benefits" class="header-menu-item-link">Benefits</a>
+        </li>
+        <li>
+          <a href="#id-projects" class="header-menu-item-link">Projects</a>
+        </li>
+        <li>
+          <a href="#id-faq" class="header-menu-item-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="header-order-link js-header-order-link" href="#id-order"
+      >Order the project</a
+    >
+
+    <button
+      type="button"
+      class="header-mobile-menu-btn js-header-mobile-menu-btn"
+    >
+      <svg
+        class="header-mobile-menu-btn-icon"
+        aria-label="Burger button icon"
+        width="28"
+        height="28"
+      >
+        <use href="./img/icons/symbols.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>

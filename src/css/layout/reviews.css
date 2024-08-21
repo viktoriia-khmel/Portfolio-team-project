@@ -1,0 +1,123 @@
+.reviews-section {
+  padding-top: 64px;
+}
+
+.reviews-swiper-container {
+  width: 100%;
+  height: 302px;
+}
+
+.reviews-container {
+  position: relative;
+  padding-bottom: 84px;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.reviews-list-container {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-list {
+  display: flex;
+}
+
+.reviews-list-item {
+  width: 100%;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  background-color: transparent;
+  transition: border-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-list-item:hover {
+  border-color: rgba(250, 250, 250, 0.6);
+}
+
+.reviews-list-item-infor {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviews-list-avatar {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.reviews-list-fullname {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.reviews-list-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.notfound {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--button-text);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    padding-bottom: 96px;
+  }
+
+  .reviews-section {
+    padding-top: 96px;
+  }
+
+  .reviews-title {
+    margin-bottom: 40px;
+  }
+
+  .reviews-list-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .reviews-list-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-list-item {
+    width: calc((100% - 48px) / 4);
+  }
+}
+
+.reviews-btn-prev.hide,
+.revies-btn-next.hide {
+  display: none;
+}

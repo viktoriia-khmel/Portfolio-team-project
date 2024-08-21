@@ -1,0 +1,43 @@
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--main);
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 0.92;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/*  	
+about-me
+benefits
+covers
+faq
+header
+hero
+projects
+reviews
+work-together
+*/
